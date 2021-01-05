@@ -1,0 +1,23 @@
+section.home_s-5(setBackground="./img/home/bg-international-h.png")
+	.container
+		.row
+			.col-lg-9
+				.head-title
+					h2 International Certificates
+				.home-certificates-swiper-wrapper
+					.swiper-container
+						.swiper-wrapper
+							-for(i=0; i<5; i++)
+								.swiper-slide
+									.wrapper.zoom-in
+										img(src="./img/home/brand-1.png", alt="")
+			.col-lg-3
+				.head-title
+					h3 Brochure
+				.home-brochure
+					.img-brochure
+						img(src="./img/home/h-brochure.png", alt="")
+					.caption
+						.icon
+							span.ri-download-fill
+						.text Download brochure 2020

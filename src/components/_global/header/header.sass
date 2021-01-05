@@ -1,0 +1,288 @@
+header
+	position: fixed
+	z-index: 20
+	top: 0
+	left: 0
+	width: 100%
+	background-color: #ffffff
+	transition: .3s all ease-in-out
+	.header
+		display: flex
+		align-items: center
+		justify-content: space-between
+		height: 80px
+		padding-top: 10px
+		background: #ffffff
+		.logo-center
+			.logo
+				display: flex
+				position: relative
+				&::before
+					position: absolute
+					content: ''
+					bottom: -12px
+					left: -8px
+					width: 100px
+					height: 100px
+					z-index: -1
+					border-radius: 50%
+					background: #ffffff
+		.menu-left
+			display: flex
+			align-items: center
+			justify-self: center
+			@media screen and ( max-width: 1280px )
+				display: none
+		.menu-right
+			display: flex
+			align-items: center
+			justify-self: center
+			.search-icon
+				padding-right: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				span
+					font-size: 14px
+					color: #9a9999
+					cursor: pointer
+				&:hover
+					span
+						color: #026fb6
+			.language
+				display: flex
+				align-items: center
+				position: relative
+				font-size: 14px
+				cursor: pointer
+				padding-right: 5px
+				color: #9a9999
+				&::before
+					position: absolute
+					content: '|'
+					width: 1px
+					height: 5px
+					top: 5px
+					right: 0
+					color: #9a9999
+				&:hover
+					ul
+						display: unset
+				ul
+					display: none
+					list-style: none
+					position: absolute
+					top: 30px
+					right: 20px
+					li
+						background-color: none
+						box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.1)
+						a
+							color: #333333
+				a.current
+					padding: 5px
+					color: #333333
+			.hotline
+				margin-left: 15px
+				display: flex
+				justify-content: center
+				align-items: center
+				color: #9a9999
+				@media screen and ( max-width: 1280px )
+					margin-left: 0
+					margin-top: 30px
+					justify-content: center
+					align-content: center
+				p
+					font-size: 12px
+					color: #9a9999
+					padding: 0 10px
+					margin-top: 5px
+					@media screen and ( max-width: 1280px )
+						color: white
+				a
+					font-size: 16px
+					font-weight: 700
+					color: #ee202e
+					@media screen and ( max-width: 1280px )
+						color: #ee202e !important
+						font-weight: 700
+			.header_btn
+				width: 40px
+				height: 40px
+				cursor: pointer
+				font-size: 20px
+				display: none
+				@media screen and ( max-width: 1280px )
+					display: flex
+					justify-content: center
+					align-items: center
+	
+	.nav-menu
+		display: flex
+		padding: 0
+		list-style: none
+		@media screen and ( max-width: 1280px )
+			display: block
+		li
+			padding-right: 55px
+			&:last-child
+				padding-right: 15px
+			a
+				color: #231f20
+				font-size: 16px
+				font-weight: 600
+				text-transform: uppercase
+			&:hover
+				a
+					color: #026fb6
+			&.active
+				a
+					color: #026fb6
+	.block_search
+		width: 100%
+		height: 100%
+		background-color: rgba(#026fb6,.5)
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		&.show
+			opacity: 1
+			pointer-events: auto
+			transform: translateX(0)
+		.search-icon
+			position: absolute
+			top: 10px
+			right: 10px
+			cursor: pointer
+			width: 40px
+			height: 40px
+			display: flex
+			justify-content: center
+			align-items: center
+			background-color: #fff
+			font-size: 20px
+			span
+				color: #026fb6
+		.search_box
+			position: relative
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			width: 400px
+			height: 40px
+			position: relative
+			input
+				width: 100%
+				height: 100%
+				border: 0
+				background-color: #ffffff
+				padding-left: 1rem
+				color: #9a9999
+				font-size: 16px
+				&::placeholder
+					color: #000000
+					font-size: 16px
+					font-style: italic
+			button
+				position: absolute
+				top: 0
+				right: 0
+				border: 0
+				width: 40px
+				height: 100%
+				background-color: unset
+				font-size: 20px
+				color: #9a9999
+	.menu_mobile
+		width: 50%
+		height: 100%
+		background-color: #ffffff
+		position: fixed
+		top: 0
+		left: 0
+		z-index: 10
+		padding: 30px
+		opacity: 0
+		pointer-events: none
+		transform: translateX(20%)
+		transition: all .5s cubic-bezier(.68,-.55,.265,1.55)
+		@media screen and ( max-width: 1280px )
+			width: 50%
+		@media screen and ( max-width: 576px )
+			width: 100%
+		.header_btn
+			position: absolute
+			top: 0
+			right: 0
+			width: 40px
+			height: 40px
+			font-size: 30px
+			cursor: pointer
+			display: flex
+			justify-content: center
+		.mobile-wrapper
+			padding-top: 20px
+			display: flex
+			flex-direction: column
+			width: 100%
+			justify-content: left
+			.nav-menu
+				list-style: none
+				padding: 0
+				&:nth-child(2)
+					li
+						&:last-child
+							border-bottom: 0
+				li
+					border-bottom: 0
+					padding: 15px 0
+					border-bottom: 1px solid #9a9999
+					a
+						color: #231f20
+						font-size: 16px
+						font-weight: 600
+						text-transform: uppercase
+					&:hover
+						a
+							color: #026fb6
+					&.active
+						a
+							color: #026fb6
+				@media screen and ( max-width: 1280px )
+					justify-content: left
+			.hotline
+				display: flex
+				justify-content: flex-start
+				color: #9a9999
+				p
+					font-size: 12px
+					color: #9a9999
+					padding: 0 10px
+					margin-top: 5px
+				a
+					font-size: 16px
+					font-weight: 700
+					color: #ee202e
+	.menu_mobile.show
+		opacity: 1
+		pointer-events: auto
+		transform: translateX(0)
+	.overlay
+		position: fixed
+		display: none
+		width: 100%
+		height: 100%
+		z-index: 9
+		top: 0
+		left: 0
+		background-color: rgba(0,0,0,0.5)
+	.overlay.show
+		@media screen and ( max-width: 1280px )
+			display: block

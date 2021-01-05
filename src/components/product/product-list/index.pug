@@ -1,0 +1,42 @@
+section.product-list
+	.container
+		.head-title
+			h1 Products
+		.row
+			.col-lg-3
+				.item-product-list
+					.title-product
+						h2 Products list
+					.content
+						ul
+							li.active
+								a(href="#") Takoyaki
+								ul.sub-product
+									li.pro
+										a(href="#") Okonomiyaki (Japanese pancake)
+									li.active.pro
+										a(href="#") Chiijimi (korea pancake)
+							li
+								a(href="#") Pancake
+							li
+								a(href="#") Breaded Fish
+							li
+								a(href="#") Shrimp
+							li
+								a(href="#") Octopus
+							li
+								a(href="#") Squid
+							li
+								a(href="#") Fish cake
+			.col-lg-9
+				.title-product
+					h2 Chiijimi (korea pancake)
+				.row
+					-for(i=0; i<9; i++)
+						.col-lg-4
+							.right-pro-list
+								.card_img
+									a(href="#")
+										img(src="./img/product/1.png", alt="")
+								.caption
+									a(href="#") Baro chijimi

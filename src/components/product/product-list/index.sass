@@ -1,0 +1,75 @@
+.product-list
+	padding: 50px 0
+	.item-product-list
+		border: 1px solid #e0e0e0
+		.title-product
+			padding: 15px
+			background: #026fb6
+			h2
+				color: #ffffff
+				font-size: 18px
+		.content
+			padding: 15px
+			ul
+				list-style: none
+				padding: 0
+				li
+					padding-bottom: 15px
+					a
+						color: #333333
+						font-size: 16px
+						font-weight: 700
+					&:hover
+						a
+							color: #026fb6
+					&.active
+						a
+							color: #026fb6
+					.sub-product
+						padding-left: 15px
+						&:last-child
+							.pro
+								padding-bottom: 0
+						.pro
+							padding-top: 15px
+							a
+								font-size: 16px
+								font-weight: 500
+								color: #333333
+							&.active
+								a
+									color: #ee202e
+							&:hover
+								a
+									color: #ee202e
+
+	.title-product
+		padding-top: 10px
+		h2
+			color: #333333
+			font-weight: 700
+			font-size: 18px
+	.right-pro-list
+		position: relative
+		padding-top: 25px
+		.card_img
+			a
+				display: block
+				max-width: 100%
+				max-height: 100%
+				width: 100%
+				height: 235px
+				@media screen and ( max-width: 1024px )
+					height: auto
+				img
+					width: 100%
+					height: 100%
+		.caption
+			a
+				position: absolute
+				bottom: 20px
+				left: 20px
+				color: #ffffff
+				font-size: 16px
+				text-transform: uppercase
+				font-weight: 700

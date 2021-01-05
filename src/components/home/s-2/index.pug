@@ -1,0 +1,19 @@
+section.home_s-2
+	.container
+		.head-title
+			h2 Main products
+		.row
+			-for(i=0; i<6; i++)
+				.col-lg-4
+					.item-main-product
+						.card_img
+							a(href="#").zoom-in
+								img(src="./img/home/h-main-1.png", alt="")
+						.title-zone
+							a(href="#") Takoyaki
+		.note-submit
+			.text Submit a quote request now and we will be in touch immediately
+			.view-more
+				.img
+					img(src="./img/home/h-icon.png", alt="")
+				a(href="#") Send request

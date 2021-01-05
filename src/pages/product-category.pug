@@ -1,0 +1,10 @@
+extends _layout.pug
+
+block var
+	- var title = 'Danh mục sản phẩm'
+	- var bodyClass = 'product-category-page'
+
+block main
+	include ../components/UI/top-banner/index
+	include ../components/UI/breadcrumb/index
+	include ../components/product/product-category/index
