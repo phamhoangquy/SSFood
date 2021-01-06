@@ -1,0 +1,103 @@
+section.product-detail
+	.container
+		.row
+			.col-lg-6
+				.project_detail_slide
+					.swiper-container.gallery-top
+						.swiper-wrapper
+							-for(i=0; i<4; i++)
+								.swiper-slide
+									img(src="./img/product/d-1.png", alt="")
+					.swiper-container.gallery-thumbs
+						.swiper-wrapper
+							-for(i=0; i<4; i++)
+								.swiper-slide
+									img(src="./img/product/d-1-small.png", alt="")
+			.col-lg-6
+				.item-desc-pro-detail
+					.title
+						h1 Squid sushi
+					.table-pro-detail
+						table.table.table-striped
+							tbody
+								tr
+									th(scope='row') Brand
+									|
+									td No Brand
+								|
+								tr
+									th(scope='row') Origin
+									|
+									td Imported
+								|
+								tr
+									th(scope='row') Expiry Date
+									|
+									td Between 9 to 15 months
+								|
+								tr
+									th(scope='row') Condition
+									|
+									td New
+								tr
+									th(scope='row') Stock
+									|
+									td 41
+								|
+								tr
+									th(scope='row') Shrimp From
+									|
+									td Cheras, 56000 Kuala Lumpur
+								|
+								tr
+									th(scope='row') Packing
+									|
+									td 8g x 20pcs
+								|
+								tr
+									th(scope='row') Net Weight
+									|
+									td 0.16kg
+								tr
+									th(scope='row') Ingredients
+									|
+									td Squid (Loligo edulis), Salt
+						.view-more
+							.img
+								img(src="./img/home/h-icon.png", alt="")
+							a(href="#") Contact us
+						.links-pro-detail
+							ul
+								li
+									a(href="#")
+										span.ri-facebook-box-fill
+								li
+									a(href="#")
+										span.ri-youtube-fill
+		.tab-product-detail
+			.tab-description
+				ul.tab-navigation
+					li.active
+						a(href="javascript:void(0)" data-type='tab-1') Description
+					li
+						a(href="javascript:void(0)" data-type='tab-2') User manual
+			.content-description
+				.tab-wrapper
+					.tab-item.active#tab-1
+						.fullcontent
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+							p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+
+section.other-product-detail
+	.container
+		.head-title
+			h2 Other products
+		.row
+			-for(i=0; i<3; i++)
+				.col-lg-4
+					.item-main-product
+						.card_img
+							a(href="#").zoom-in
+								img(src="./img/home/h-main-1.png", alt="")
+						.title-zone
+							a(href="#") Takoyaki
