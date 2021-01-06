@@ -183,7 +183,96 @@ function swiperInit() {
                 slidesPerView: 5,
             },
         },
-
+    });
+    var aboutNewsSwiper = new Swiper(".about-2 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 30,
+        breakpointsInverse: true,
+        navigation: {
+            nextEl: '.about-2 .nav-arrow-next',
+            prevEl: '.about-2 .nav-arrow-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 1,
+            },
+            480: {
+                slidesPerView: 2,
+            },
+            768: {
+                slidesPerView: 3,
+            },
+            1025: {
+                slidesPerView: 4,
+            },
+            1440: {
+                slidesPerView: 4,
+            },
+        },
+    });
+    var aboutCertificatesSwiper = new Swiper(".about-4 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 20,
+        breakpointsInverse: true,
+        navigation: {
+            nextEl: '.about-4 .nav-arrow-next',
+            prevEl: '.about-4 .nav-arrow-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            },
+            1025: {
+                slidesPerView: 6,
+            },
+            1440: {
+                slidesPerView: 7,
+            },
+        },
+    });
+    var aboutClientSwiper = new Swiper(".about-6 .swiper-container", {
+        // Optional parameters
+        speed: 1000,
+        spaceBetween: 20,
+        breakpointsInverse: true,
+        navigation: {
+            nextEl: '.about-6 .nav-arrow-next',
+            prevEl: '.about-6 .nav-arrow-prev',
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
+            },
+            400: {
+                slidesPerView: 2,
+            },
+            480: {
+                slidesPerView: 4,
+            },
+            768: {
+                slidesPerView: 5,
+            },
+            1025: {
+                slidesPerView: 6,
+            },
+            1440: {
+                slidesPerView: 7,
+            },
+        },
     });
 }
 
