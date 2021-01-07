@@ -1,0 +1,11 @@
+extends _layout.pug
+
+block var
+	- var title = 'Brochure'
+	- var bodyClass = 'brochure-page'
+
+block main
+	include ../components/UI/top-banner/index
+	include ../components/UI/breadcrumb/index
+	include ../components/brochure/index
+	include ../components/UI/pagination/index

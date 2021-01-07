@@ -8,6 +8,7 @@ $(document).ready(function() {
     productDetailSlide();
     // tab
     tabActive();
+    showBackToTop();
 });
 
 function height(el) {
@@ -276,6 +277,22 @@ function swiperInit() {
     });
 }
 
+function showBackToTop() {
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            $('#back-to-top').addClass('active');
+        } else {
+            $('#back-to-top').removeClass('active');
+        }
+    });
+
+    $("#back-to-top").on("click", function(e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: 0
+        })
+    })
+}
 $(document).on('scroll', function() {
     header.scrollActive()
 });
