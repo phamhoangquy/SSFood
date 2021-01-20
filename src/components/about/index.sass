@@ -28,11 +28,14 @@
 		transition: .3s all  ease-in-out
 		border: 1px solid #999999
 		cursor: pointer
-		em
+		img
 			transition: .3s all  ease-in-out
-			color: #999999
+			filter: brightness(0.6)
 		&:hover
 			background: #ee202e
+			border: none
+			img
+				filter: brightness(1)
 		&:focus
 			outline: none
 	.nav-arrow-next
@@ -195,6 +198,10 @@
 			border-radius: 50%
 			padding: 30px
 			cursor: pointer
+			img
+				width: 88px
+				height: 88px
+				object-fit: contain
 
 // section-5
 .about-5
@@ -324,12 +331,14 @@
 		transition: .3s all  ease-in-out
 		border: 1px solid #999999
 		cursor: pointer
-		em
+		img
 			transition: .3s all  ease-in-out
-			color: #999999
+			filter: brightness(1)
 		&:hover
 			background: #ee202e
 			border: none
+			img
+				filter: brightness(2)
 		&:focus
 			outline: none
 			border: none
@@ -366,7 +375,11 @@
 		align-items: center
 		margin-top: 40px
 		.wrapper
-			background: #ffffff
+			background: rgba(#ffffff,.9)
 			border-radius: 50%
 			padding: 30px
 			cursor: pointer
+			img
+				width: 88px
+				height: 88px
+				object-fit: contain
