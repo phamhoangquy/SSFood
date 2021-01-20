@@ -29,7 +29,9 @@
 			.swiper-slide-thumb-active
 				border: 1px solid #ee202e
 	// End nút slide
-	.item-desc-pro-detail
+
+	.item-desc-pro-detail,.tab-product-detail
+		padding-bottom: 30px
 		.title
 			// font-size: 30px
 			// color: #333333
@@ -46,6 +48,7 @@
 				text-transform: uppercase
 		.table-pro-detail
 			margin-top: 25px
+			margin-bottom: 30px
 			table
 				width: 100%
 				tbody
@@ -98,7 +101,7 @@
 								span
 									color: #ee202e
 	.tab-description
-		padding-top: 62px
+		padding-top: 60px
 		overflow-x: auto
 		ul 
 			list-style: none
@@ -152,25 +155,22 @@
 	.row
 		margin-top: 25px
 	.col-lg-4
-		padding-left: 0
+		padding-bottom: 5px
+		padding-left: 5px
 		padding-right: 0
-		&:first-child
-			padding-left: 15px
-		&:nth-child(4)
-			padding-left: 15px
-		&:nth-child(3)
-			padding-right: 15px
-		&:last-child
-			padding-right: 15px
-		@media screen and ( max-width: 1023px )
-			padding-left: 15px
-			padding-right: 15px
-		@media screen and ( max-width: 768px )
-			padding-left: 15px
-			padding-right: 15px
-		@media screen and ( max-width: 576px )
-			padding-left: 15px
-			padding-right: 15px
+		&:nth-child(2n)
+			padding-left: 5px
+			padding-right: 0
+		&:nth-child(2n+1)
+			padding-left: 5px
+			padding-right: 0
+		@media screen and ( max-width: 1023px)
+			padding: 0 15px
+			margin-bottom: 15px
+			&:nth-child(2n),&:nth-child(2n+1)
+				padding: 0 15px
+			
+		
 	.item-main-product
 		position: relative
 		.card_img
