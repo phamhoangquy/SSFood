@@ -166,7 +166,7 @@ function swiperInit() {
         breakpointsInverse: true,
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             400: {
                 slidesPerView: 2,
@@ -226,7 +226,7 @@ function swiperInit() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             400: {
                 slidesPerView: 2,
@@ -256,7 +256,7 @@ function swiperInit() {
         },
         breakpoints: {
             320: {
-                slidesPerView: 1,
+                slidesPerView: 2,
             },
             400: {
                 slidesPerView: 2,

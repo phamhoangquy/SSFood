@@ -86,6 +86,8 @@
 	.item-news-other
 		margin-top: 45px
 		background: #ffffff
+		@media screen and ( max-width: 576px)
+			margin-top: 25px
 		.card_img
 			a
 				display: block
@@ -127,6 +129,8 @@
 				align-items: center
 				cursor: pointer
 				margin-top: 33px
+				@media screen and ( max-width: 576px)
+					margin-top: 15px
 				a
 					color: #0f6fb5
 					font-size: 14px
@@ -135,3 +139,8 @@
 					margin-right: 15px
 				.img
 					display: flex
+				&:hover
+					a
+						color: #ee202e
+					img
+						filter: hue-rotate(145deg)
