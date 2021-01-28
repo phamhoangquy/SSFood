@@ -61,10 +61,10 @@
 		</li>
 	</xsl:template>
 	<xsl:template match="Zone" mode="Child">
-		<li class="pro">
+		<li class="sub-has-dropdown">
 			<xsl:if test="IsActive='true'">
 				<xsl:attribute name="class">
-					<xsl:text>pro active</xsl:text>
+					<xsl:text>sub-has-dropdown active</xsl:text>
 				</xsl:attribute>
 			</xsl:if>
 			<a>
