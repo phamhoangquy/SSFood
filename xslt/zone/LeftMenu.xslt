@@ -24,20 +24,22 @@
     <li>
       <xsl:if test="IsActive='true'">
         <xsl:attribute name="class">
-          <xsl:text>active</xsl:text>
+          <xsl:text>pro</xsl:text>
         </xsl:attribute>
       </xsl:if>
-      <a>
-        <xsl:attribute name="href">
-          <xsl:value-of select="Url"></xsl:value-of>
-        </xsl:attribute>
-        <xsl:attribute name="target">
-          <xsl:value-of select="Target"></xsl:value-of>
-        </xsl:attribute>
-        <i class="fa fa-angle-right"></i>
-        <xsl:text> </xsl:text>
-        <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
-      </a>
+      <div class="title-pro-zone">
+        <a>
+          <xsl:attribute name="href">
+            <xsl:value-of select="Url"></xsl:value-of>
+          </xsl:attribute>
+          <xsl:attribute name="target">
+            <xsl:value-of select="Target"></xsl:value-of>
+          </xsl:attribute>
+          <xsl:text> </xsl:text>
+          <xsl:value-of select="Title" disable-output-escaping="yes"></xsl:value-of>
+        </a>
+        <span class="ri-arrow-down-s-line"></span>
+      </div>
       <xsl:if test="count(Zone) > 0">
         <ul class="sub-product">
           <xsl:apply-templates select="Zone" mode="Child"></xsl:apply-templates>
