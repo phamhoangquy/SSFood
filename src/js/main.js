@@ -6,8 +6,44 @@ $(document).ready(function() {
     productDetailSlide();
     tabActive();
     sideNav()
+    linkAbout();
+    linkSrcollAbout();
     showBackToTop();
 });
+
+// link srcoll page to about
+function linkSrcollAbout() {
+    var path = window.location.href;
+    let Ketqua = path.substr(path.indexOf("#") + 1);
+    if (path.indexOf("#") != -1) {
+        let offset = $("header").outerHeight();
+        $(this).parent().addClass("active").siblings().removeClass("active");
+        $("html, body").animate({
+                scrollTop: $("#" + Ketqua).offset().top - offset,
+            },
+            800,
+        );
+    }
+}
+
+// srcoll about
+function linkAbout() {
+    $(".link-to-about-section a").on("click", function(event) {
+        if (this.hash !== "") {
+            let offset = $("header").outerHeight() + 40;
+            var hash = this.hash;
+            $(this).parent().addClass('active').siblings().removeClass("active")
+            $("html, body").animate({
+                    scrollTop: $(hash).offset().top - offset,
+                },
+                800,
+                function() {
+                    window.location.hash = hash;
+                }
+            );
+        } // End if
+    });
+}
 
 function height(el) {
     var height = 0;
